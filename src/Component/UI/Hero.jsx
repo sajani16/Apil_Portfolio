@@ -14,7 +14,7 @@ const Hero = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#1A2C50]/50"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl px-6">
@@ -27,7 +27,7 @@ const Hero = () => {
         </p>
         <NavLink
           to="/services"
-          className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 rounded-full text-lg font-semibold text-white hover:bg-white hover:text-[#0B1F3A] transition-all animate-fadeInUp delay-400"
+          className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white rounded-full text-lg font-semibold text-white hover:bg-white hover:text-[#0B1F3A] transition-all animate-fadeInUp delay-400"
         >
           Explore More <ArrowRight className="text-yellow-400 w-7 h-7" />
         </NavLink>

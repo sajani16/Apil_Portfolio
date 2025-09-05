@@ -9,7 +9,7 @@ export default function CallToAction() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#0B1F3A]/70"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto px-6">

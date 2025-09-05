@@ -8,8 +8,8 @@ export default function Bottom() {
       className="relative h-96 flex items-center justify-center text-center bg-fixed bg-center bg-cover"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* Semi-transparent Blue Overlay */}
-      <div className="absolute inset-0 bg-blue-900/40 z-10"></div>
+      {/* Semi-transparent Black Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       {/* Content */}
       <motion.div
@@ -19,7 +19,7 @@ export default function Bottom() {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FFD700]">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
           Empowering Your Digital Journey
         </h2>
         <p className="text-base md:text-lg leading-relaxed text-white mb-2">
