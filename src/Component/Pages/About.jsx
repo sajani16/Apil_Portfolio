@@ -11,19 +11,19 @@ import bgImage from "../../assets/about.jpg";
 export default function AboutPage() {
   const descriptionSections = [
     {
-      title: "Our Story",
+      title: "APIL Story",
       text: "APIL was founded with a mission to empower businesses with creative and efficient digital solutions. We believe in combining innovation, design, and technology to transform ideas into impactful experiences. Over the years, we have grown into a diverse team passionate about solving complex problems. Our journey is driven by a commitment to quality and customer satisfaction.",
       image: a1,
       reverse: false,
     },
     {
-      title: "Our Approach",
+      title: "Creative Approach",
       text: "We focus on understanding your business goals, identifying opportunities, and delivering tailored solutions. Collaboration and transparency are key to our process. Our approach ensures that every project aligns with your vision and meets business objectives. By emphasizing strategy and design thinking, we create lasting value.",
       image: a2,
       reverse: true,
     },
     {
-      title: "Why Choose Us",
+      title: "Together Towards Growth",
       text: "Our expertise, dedication, and passion make us the right partner for your digital journey. We ensure quality, innovation, and measurable results in every project we undertake. With a client-centric mindset, we deliver solutions that make a tangible impact. Choosing us means choosing a team committed to your growth and success.",
       image: a3,
       reverse: false,
@@ -77,10 +77,11 @@ export default function AboutPage() {
 
       {/* Mission & Goals Section */}
       <section className="py-20 px-6 bg-gray-100 text-[#0B1F3A]">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-          Our Mission & Goals
+        <h2 className=" text-center text-3xl md:text-4xl font-extrabold text-[#0B1F3A] leading-snug mb-6">
+          Our Missions {""}
+          <span className="text-yellow-400">& Goals</span>
         </h2>
-        <p className="max-w-6xl mx-auto mb-12 text-center text-gray-700 text-lg leading-relaxed">
+        <p className="max-w-6xl mx-auto mb-12 text-center text-gray-900 text-lg leading-relaxed">
           At APIL, we empower businesses with cutting-edge digital solutions
           tailored to their unique needs. Our approach combines innovation,
           collaboration, and excellence to deliver impactful results. We work
@@ -104,13 +105,19 @@ export default function AboutPage() {
               <img
                 src={section.image}
                 alt={section.title}
-                className="shadow-md w-full object-cover rounded-md"
+                className="shadow-md w-full object-cover rounded-sm"
               />
             </div>
             <div className="md:w-1/2 text-center md:text-left">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#0B1F3A]">
-                {section.title}
+              <h3 className="text-4xl md:text-5xl font-bold mb-4">
+                {section.title.split(" ").slice(0, -1).join(" ")}{" "}
+                <span className="text-yellow-400">
+                  {section.title.split(" ").slice(-1)}
+                </span>
               </h3>
+
+              <div className=" mb-8 w-20 h-1 bg-yellow-400 rounded"></div>
+
               <p className="text-gray-700 text-lg">{section.text}</p>
             </div>
           </div>

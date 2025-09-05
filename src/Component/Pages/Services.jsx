@@ -93,10 +93,10 @@ const Services = () => {
       {/* Services Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            What We Do
+         <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B1F3A] leading-snug mb-6">
+            What {""}
+            <span className="text-yellow-400">We Do</span>
           </h2>
-          <div className="mx-auto mt-2 mb-8 w-20 h-1 bg-yellow-500 rounded"></div>
           <p className="text-gray-600 max-w-2xl mx-auto mb-16">
             We provide a full spectrum of digital services to help businesses
             thrive. From developing scalable software to designing beautiful
