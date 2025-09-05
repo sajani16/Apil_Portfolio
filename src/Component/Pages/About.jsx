@@ -61,7 +61,7 @@ export default function AboutPage() {
         className="relative h-96 flex items-center justify-center text-center bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="absolute inset-0 bg-blue-900/30 z-10"></div>
+        <div className="absolute inset-0 bg-black-50/30 z-10"></div>
 
         <div className="relative z-20 max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
