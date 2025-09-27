@@ -25,11 +25,12 @@ const Home = () => {
           </p>
           <div className="mx-auto w-full h-100 rounded-xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.123456789!2d85.324!3d27.710!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19123456789%3A0xabcdef123456789!2sYour%20Company!5e0!3m2!1sen!2snp!4v1693721234567!5m2!1sen!2snp"
-              className="w-full h-full border-0"
-              allowFullScreen=""
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56331.26627860039!2d84.086008!3d28.06405685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995bb6d1eff0961%3A0x2a8ce59652bd219c!2sDulegauda%2C%20Shuklagandaki!5e0!3m2!1sen!2snp!4v1758953417573!5m2!1sen!2snp"
+              width="100%"
+              height="450"
+              allowfullscreen=""
               loading="lazy"
-              title="Our Location"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

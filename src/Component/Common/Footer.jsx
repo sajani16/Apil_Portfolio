@@ -1,10 +1,9 @@
 import React from "react";
 import { Facebook, Twitter, Linkedin, Github } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-     
       <footer className="bg-[#0B1F3A] text-white pt-12">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* Company Info */}
@@ -21,24 +20,24 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-3">Quick Links</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="/" className="hover:text-yellow-400">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="/services" className="hover:text-yellow-400">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="/about" className="hover:text-yellow-400">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="/contact" className="hover:text-yellow-400">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -46,23 +45,34 @@ const Footer = () => {
           {/* Contact Us */}
           <div>
             <h2 className="text-xl font-bold mb-3">Connect With Us</h2>
-            <p>Email: info@yourcompany.com</p>
-            <p>Phone: +977 9800000000</p>
-            <p>Address: Kathmandu, Nepal</p>
+            <p>Email: lamsalapil5@gmail.com</p>
+            <p>Phone: +977 9804116597</p>
+            <p>Address: Shuklagandaki, Tanahun, Nepal</p>
 
             {/* Social Media */}
             <div className="mt-4">
               <div className="flex justify-center md:justify-start gap-4">
-                <a href="#" className="hover:text-yellow-400">
+                <a
+                  href="https://www.facebook.com/lamsal.apil.2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-400"
+                >
                   <Facebook />
                 </a>
                 <a href="#" className="hover:text-yellow-400">
                   <Twitter />
                 </a>
-                <a href="#" className="hover:text-yellow-400">
+                <a
+                  href="https://www.linkedin.com/in/apil25/"
+                  className="hover:text-yellow-400"
+                >
                   <Linkedin />
                 </a>
-                <a href="#" className="hover:text-yellow-400">
+                <a
+                  href="https://github.com/Apil-Tech"
+                  className="hover:text-yellow-400"
+                >
                   <Github />
                 </a>
               </div>
@@ -71,20 +81,20 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h2 className="text-xl font-bold mb-3">Support & Policies</h2>
-            <ul className="space-y-2">
+            <h2 className="text-xl font-bold mb-3 ">Support & Policies</h2>
+            <ul className="space-y-2  ">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-yellow-400">
                   Terms & Conditions
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-yellow-400">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className=" hover:text-yellow-400">
                   Cookies Policy
                 </a>
               </li>

@@ -1,16 +1,17 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import aboutImg from "../../assets/aboutcompany.jpg"; 
+import aboutImg from "../../assets/aboutcompany.jpg";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        
         {/* Left Content */}
         <div>
           <p className="text-gray-400 text-sm font-medium tracking-wide mb-2">
-           Who We Are
+            Who We Are
           </p>
 
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B1F3A] leading-snug mb-6">
@@ -19,11 +20,13 @@ const AboutSection = () => {
           </h2>
 
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            <span className="font-bold text-yellow-400">APIL</span> is a full-service digital solutions company, 
-            dedicated to helping businesses grow through innovative technology, creative design, and strategic solutions. 
-            We focus on delivering meaningful experiences, leveraging modern tools and best practices to ensure every 
-            project exceeds client expectations. Our team combines expertise, creativity, and passion to transform ideas 
-            into impactful results.
+            <span className="font-bold text-yellow-400">APIL</span> is a
+            full-service digital solutions company, dedicated to helping
+            businesses grow through innovative technology, creative design, and
+            strategic solutions. We focus on delivering meaningful experiences,
+            leveraging modern tools and best practices to ensure every project
+            exceeds client expectations. Our team combines expertise,
+            creativity, and passion to transform ideas into impactful results.
           </p>
 
           {/* Features list */}
@@ -56,14 +59,15 @@ const AboutSection = () => {
 
           {/* Buttons */}
           <div className="flex space-x-4">
-            <button className="bg-yellow-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0B1F3A] transition">
+            <button  onClick={() => navigate("/about")} className="bg-yellow-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
               Meet Our Team
             </button>
-            <button className="border-2 border-yellow-400 text-[#0B1F3A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 hover:text-white transition">
+            <button  onClick={() => navigate("/contact")} className="border-2 border-yellow-400 text-[#0B1F3A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 hover:text-white transition">
               Get In Touch
             </button>
           </div>
         </div>
+       
 
         {/* Right Image */}
         <div>

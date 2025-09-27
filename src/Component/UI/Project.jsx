@@ -32,7 +32,7 @@ export default function Projects() {
 
               {/* Overlay  */}
               <div
-                className="absolute inset-0 bg-blue-900/75 flex items-center justify-center 
+                className="absolute inset-0 bg-black/75 flex items-center justify-center 
                 transform -translate-x-full group-hover:translate-x-0 
                 transition-transform duration-500 ease-in-out"
               >
@@ -40,10 +40,11 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white text-[#0B1F3A] p-4 rounded-full shadow-lg hover:scale-110 transition duration-500"
+                  className="bg-white text-[#0B1F3A] p-4 rounded-full shadow-lg hover:scale-105 transition duration-500 font-semibold "
                 >
                   Live Preview <FaExternalLinkAlt className="inline ml-2" />
                 </a>
+                
               </div>
 
               {/* Project Info */}

@@ -9,7 +9,7 @@ export default function Bottom() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Semi-transparent Blue Overlay */}
-      <div className="absolute inset-0 bg-blue-900/40 z-10"></div>
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       {/* Content */}
       <motion.div

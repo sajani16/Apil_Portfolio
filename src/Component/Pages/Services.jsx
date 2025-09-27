@@ -71,7 +71,7 @@ const Services = () => {
         className="relative h-96 flex items-center justify-center text-center bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="absolute inset-0 bg-gray-900/40 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
         <div
           className="relative z-20 max-w-3xl px-6"
           initial={{ opacity: 0, y: 20 }}
@@ -79,13 +79,13 @@ const Services = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-500">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
             Our Expertise
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-white">
-            Delivering modern software solutions that combine innovation, design,
-            and technology. We help businesses achieve their digital goals with
-            creativity and precision.
+            Delivering modern software solutions that combine innovation,
+            design, and technology. We help businesses achieve their digital
+            goals with creativity and precision.
           </p>
         </div>
       </section>
@@ -107,7 +107,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="p-8 rounded-2xl shadow-lg bg-white border border-gray-100 transition transform hover:-translate-y-2 hover:shadow-2xl"
+                className="p-8 rounded-2xl shadow-lg bg-white border border-gray-100 transition transform hover:-translate-y-2 hover:shadow-2xl hover:bg-yellow-300 hover:text-white"
               >
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-500 text-white shadow-md">
@@ -140,9 +140,9 @@ const Services = () => {
             </div>
             <a
               href="mailto:contact@apil.com"
-              className="bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-yellow-400 transition"
+              className="bg-yellow-400 text-white px-8 py-4 rounded-full font-semibold hover:bg-yellow-500 transition"
             >
-              Get in Touch
+              Let’s Connect
             </a>
           </div>
         </div>

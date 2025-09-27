@@ -49,12 +49,9 @@ const Who = () => {
             Our mission is to craft scalable, impactful, and user-focused
             software solutions that empower businesses worldwide.
           </p>
-          <button
-            onClick={() => navigate("/services")}
-            className="bg-yellow-400 text-white px-6 py-3 rounded-full shadow-md hover:bg-yellow-700 transition"
-          >
-            Explore More
-          </button>
+           <button  onClick={() => navigate("/services")} className="bg-yellow-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
+              Explore More
+            </button>
 
           {/* Why Choose Us */}
           <div className="mt-10">

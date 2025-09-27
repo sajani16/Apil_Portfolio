@@ -6,7 +6,7 @@ import a3 from "../../assets/aboutapil1.jpg";
 import t1 from "../../assets/team1.jpg";
 import t2 from "../../assets/team2.jpg";
 import t3 from "../../assets/team3.jpg";
-import bgImage from "../../assets/about.jpg";
+import bgImage from "../../assets/apilabout3.jpg";
 
 export default function AboutPage() {
   const descriptionSections = [
@@ -32,11 +32,11 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Sharmila Poudel",
+      name: "Apil Lamsal",
       role: "Founder & CEO",
       image: t1,
-      linkedin: "https://linkedin.com/in/sharmila",
-      facebook: "https://facebook.com/sharmila",
+      linkedin: "https://linkedin.com/in/apil25",
+      facebook: "https://facebook.com/apil.2025",
     },
     {
       name: "Ramesh Koirala",
@@ -61,7 +61,7 @@ export default function AboutPage() {
         className="relative h-96 flex items-center justify-center text-center bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="absolute inset-0 bg-blue-900/30 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
 
         <div className="relative z-20 max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">

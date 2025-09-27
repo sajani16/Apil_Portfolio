@@ -9,7 +9,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import bgImage from "../../assets/about.jpg";
+import bgImage from "../../assets/backapil2.jpg";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -61,8 +61,8 @@ export default function Contact() {
 
   const contactInfo = [
     { icon: Phone, label: " Phone Number", value: "+977 986983456" },
-    { icon: Mail, label: "Email", value: "support@apil.com" },
-    { icon: MapPin, label: "Address", value: "Kathmandu, Nepal" },
+    { icon: Mail, label: "Email", value: "lamsalapil@gmail.com" },
+    { icon: MapPin, label: "Address", value: "Shuklagandaki, Tanahun, Nepal" },
   ];
 
   const socialLinks = [Facebook, Instagram, Twitter];
@@ -73,8 +73,8 @@ export default function Contact() {
         className="relative h-96 flex items-center justify-center text-center bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        {/* Semi-transparent Blue Overlay */}
-        <div className="absolute inset-0 bg-blue-900/70 z-10"></div>
+        {/* Semi-transparent Black Overlay */}
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
 
         {/* Content */}
         <div

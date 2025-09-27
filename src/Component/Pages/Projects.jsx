@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { projectsData, categories } from "../Data/Projectdata";
 import { ExternalLink } from "lucide-react";
-import bgImage from "../../assets/about.jpg";
+import bgImage from "../../assets/aboutapil2.jpg";
 import CallToAction from "../UI/Cta";
 
 export default function Projects() {
@@ -21,7 +21,7 @@ export default function Projects() {
         className="relative h-96 flex items-center justify-center text-center bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="absolute inset-0 bg-blue-900/30 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
 
         <div
           className="relative z-20 max-w-3xl px-6"
@@ -55,8 +55,8 @@ export default function Projects() {
             onClick={() => setActiveFilter(cat.name)}
             className={`px-5 py-2 rounded-full font-medium border transition ${
               activeFilter === cat.name
-                ? "bg-[#0B1F3A] text-white border-[#0B1F3A]"
-                : "bg-white text-[#0B1F3A] border-gray-300 hover:border-[#0B1F3A]"
+                ? "bg-yellow-400 text-white border-yellow-400"
+                : "bg-[#0B1F3A] text-white border-gray-300 hover:bg-[#050f1c]"
             }`}
           >
             {cat.name}
@@ -78,12 +78,12 @@ export default function Projects() {
       />
 
       {/*  Overlay */}
-      <div className="absolute inset-0 bg-blue-900/75 flex items-center justify-center transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out">
+      <div className="absolute inset-0 bg-black/70 flex items-center justify-center transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out">
         <a
           href={project.url || "#"}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center bg-yellow-400 text-[#0B1F3A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition transform hover:-translate-y-1"
+          className="inline-flex items-center justify-center bg-yellow-300 text-[#0B1F3A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition transform hover:-translate-y-1"
         >
           View Project <ExternalLink size={18} className="ml-2" />
         </a>
